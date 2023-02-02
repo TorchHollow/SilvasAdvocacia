@@ -1,18 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
+    --fundo_principal: #e6ebf0;
     --cor_principal: #2764e8;
     --cor_secundaria: #071e52;
     --cinza_azulado: #2b3447;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-weight: normal;
 }
 
-body{
+body {
     font-family: 'Quicksand', sans-serif;
+    background-color: var(--fundo_principal)
+}
+
+.fa-s {
+    color: var(--cor_principal);
+}
+
+.titulo {
+    height: 70px;
+    width: 100%;
+    padding: 19px 30px;
+    position: relative;
+}
+
+.ti-header i {
+    font-size: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.titulo .ti-header {
+    display: inline;
+}
+
+.titulo .ti-header .ti-logo {
+    display: inline-block;
+    margin-top: -7px;
+}
+
+.titulo .ti-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.titulo .ti-links {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.titulo .ti-links a {
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: 550;
+    color: var(--cor_principal);
+}
+
+.titulo .ti-links i {
+    font-size: 30px;
+}
+
+
+
+.titulo #ti-check,
+.titulo .ti-btn {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .titulo {
+        background-color: var(--cor_secundaria);
+    }
+
+    .titulo .ti-btn {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .titulo .ti-btn label {
+        display: inline-block;
+        width: 80px;
+        height: 70px;
+        padding: 25px;
+    }
+
+    .titulo .ti-btn label span {
+        display: block;
+        height: 10px;
+        width: 25px;
+        border-top: 3px solid #eee;
+    }
+
+    .titulo .ti-btn label:hover,
+    .titulo #ti-check:checked~.ti-btn label {
+        background-color: var(--cor_do_titulo);
+        transition: all 0.5s ease;
+    }
+
+    .titulo .ti-links {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50%;
+        background-color: var(--cor_do_titulo);
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
+    }
+
+    .titulo .ti-links a {
+        display: block;
+    }
+
+    .titulo #ti-check:not(:checked)~.ti-links {
+        height: 0px;
+    }
+
+
+    .titulo #ti-check:checked~.ti-links {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .titulo .ti-links{
+        padding: 10px 40px;
+        margin: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--cor_do_titulo);
+    }
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.conteudo-drop,
+.conteudo-drop2 {
+    display: none;
+    position: absolute;
+    background-color: var(--cor_secundaria);
+    min-width: 120px;
+    font-size: 16px;
+    top: 34px;
+    z-index: 1;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .conteudo-drop,
+.dropdown2:hover .conteudo-drop2 {
+    display: block;
+}
+
+.conteudo-drop a {
+    padding: 12px 10px;
+    border-bottom: 1px solid rgb(197, 197, 250);
+    display: block;
+    transition: all 0.5s ease !important;
+}
+
+.dropBtn .conteudo-drop a:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.dropdown:hover .dropBtn,
+.dropdown2:hover .dropBtn2 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown2 .conteudo-drop2 {
+    position: absolute;
+    right: 120px;
+    top: 150px;
+}
+
+.dropBtn2 i {
+    margin-left: 15px;
 }
