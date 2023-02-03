@@ -14,6 +14,20 @@
     font-weight: normal;
 }
 
+/*Animação*/
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: var(--fundo_principal)
@@ -76,7 +90,8 @@ body {
     display: none;
 }
 
-@media (max-width:700px) {
+
+@media (max-width:1024px) {
     .titulo {
         background-color: var(--cor_secundaria);
     }
@@ -134,7 +149,7 @@ body {
         overflow-y: auto;
     }
 
-    .titulo .ti-links{
+    .titulo .ti-links {
         padding: 10px 40px;
         margin: 20px;
         font-size: 18px;
@@ -190,4 +205,76 @@ body {
 
 .dropBtn2 i {
     margin-left: 15px;
+}
+
+/*Nome da empresa*/
+
+.nome {
+    height: 70px;
+    width: 100%;
+    position: relative;
+    animation: transitionIn 0.75s;
+}
+
+.geral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nome-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-logo i {
+    font-size: 150px;
+    color: var(--cor_secundaria);
+}
+
+.nome-logo h1 {
+    color: var(--cor_principal);
+    font-size: 80px;
+}
+
+.nome-logo p:nth-child(3) {
+    font-size: 15px;
+    color: var(--cor_principal);
+}
+
+.nome-logo h3 {
+    font-size: 30px;
+}
+
+.nome-logo a {
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: var(--cor_principal);
+}
+
+@media (max-width:1024px){
+    .geral img{
+        display: none;
+    }
+}
+
+@media (max-width:425px){
+    .nome-logo h3 {
+        font-size: 25px;
+    }
+}
+
+.nome-logo p:nth-child(5) {
+    font-size: 15px;
+}
+
+@media (max-width:325px){
+    .nome-logo h3 {
+        font-size: 20px;
+    }
 }
