@@ -257,13 +257,13 @@ body {
     background-color: var(--cor_principal);
 }
 
-@media (max-width:1024px){
-    .geral img{
+@media (max-width:1024px) {
+    .geral img {
         display: none;
     }
 }
 
-@media (max-width:425px){
+@media (max-width:425px) {
     .nome-logo h3 {
         font-size: 25px;
     }
@@ -273,8 +273,142 @@ body {
     font-size: 15px;
 }
 
-@media (max-width:325px){
+@media (max-width:325px) {
     .nome-logo h3 {
         font-size: 20px;
     }
+}
+
+.formulario {
+    padding-bottom: 50px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Sources/advogado.jpg);
+    background-repeat: no-repeat;
+    background-size: 170vw 250vh;
+}
+
+.for-titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.for-titulo h1:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.for-titulo h1:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.for-input{
+    border:  1px solid var(--cinza_azulado);
+    border-radius: 5px;
+}
+
+.for-input:nth-child(1) {
+    font-size: 15px;
+    width: 25vw;
+    height: 5vh;
+}
+
+.for-input:nth-child(2) {
+    width: 25vw;
+    height: 5vh;
+}
+
+.for-input:nth-child(4) {
+    resize: none;
+    font-size: 20px;
+    width: 50.2vw;
+    height: 20vh;
+}
+
+.for-btn{
+    
+    height: 5vh;
+    width: 50.2vw;
+    border: 1px solid var(--cinza_azulado);
+    border-radius: 7px;
+    background-color: var(--cor_secundaria);
+    color: white;
+}
+
+@media (max-width:1024px) {
+    .formulario {
+        height: auto;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./Sources/advogado.jpg);
+        background-repeat: no-repeat;
+        background-size: 200vw 150vh;
+    }
+
+    .for-titulo{
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:650px){
+    .for-input:nth-child(1) {
+        font-size: 15px;
+        width: 50vw;
+        height: 5vh;
+    }
+    
+    .for-input:nth-child(2) {
+        width: 48vw;
+        height: 5vh;
+    }
+    
+    .for-input:nth-child(4) {
+        resize: none;
+        font-size: 20px;
+        width: 99vw;
+        height: 20vh;
+    }
+    
+    .for-btn{
+        
+        height: 5vh;
+        width: 99vw;
+        border: 1px solid var(--cinza_azulado);
+        border-radius: 7px;
+        background-color: var(--cor_secundaria);
+        color: white;
+    }
+}
+
+.atuacao{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.atuacao h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--cor_secundaria);
+}
+
+.atuacao p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
 }
