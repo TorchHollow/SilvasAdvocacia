@@ -593,7 +593,7 @@ body {
 
 }
 
-@media (max-width: 1024px) and (min-width:670px) {
+@media (max-width: 1024px) and (min-width:660px) {
     .servicos {
         width: 30vw;
         height: 10vh;
@@ -710,6 +710,170 @@ body {
     color: var(--fundo_principal);
     background-color: var(--cor_principal);
     width: 40vw;
+}
+
+@media (max-width:650px){
+    .oab {
+        display: flex;
+        flex-direction: column;
+        padding-top: 350px;
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+    
+    .foto-da-oab{
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    .foto-da-oab img {
+        height: 50vh;
+        width: 100%;
+    }
+    
+    .oab-id {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background-color: var(--cor_principal);
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .oab-id h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2b3447;
+        padding-left: 0px;
+        width: 100%;
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .descricao i{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 80px;
+        color: var(--fundo_principal);
+    }
+    
+    .descricao p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: var(--fundo_principal);
+        font-size: 25px;
+        width: 80vw;
+    }
+    
+    .descricao hr{
+        width: 60vw;
+    }
+    
+    .descricao a{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        font-size: 15px;
+        color: var(--fundo_principal);
+        background-color: var(--cor_principal);
+        width: 80vw;
+    }
+}
+
+@media (max-width: 1024px) and (min-width:660px){
+    .oab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 350px;
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+    
+    .foto-da-oab{
+        padding-top: 150px;
+        padding-right: 70px;
+        padding-left: 30px;
+    }
+    
+    .foto-da-oab img {
+        height: 40vh;
+        width: 35vw;
+    }
+    
+    .oab-id {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 35vw;
+        background-color: var(--cor_principal);
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .oab-id h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2b3447;
+        padding-left: 50px;
+        width: 60vw;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    
+    .descricao i{
+        padding-top: 80px;
+        padding-bottom: 20px;
+        font-size: 80px;
+        color: var(--fundo_principal);
+    }
+    
+    .descricao p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: var(--fundo_principal);
+        font-size: 25px;
+        width: 40vw;
+    }
+    
+    .descricao hr{
+        width: 40vw;
+    }
+    
+    .descricao a{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: var(--fundo_principal);
+        background-color: var(--cor_principal);
+        width: 40vw;
+    }
+    
 }
 
 /*Animação*/
