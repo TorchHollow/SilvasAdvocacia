@@ -593,7 +593,7 @@ body {
 
 }
 
-@media (max-width: 1024px) and (min-width:660px) {
+@media (max-width: 1150px) and (min-width:660px) {
     .servicos {
         width: 30vw;
         height: 10vh;
@@ -638,7 +638,7 @@ body {
     position: relative;
 }
 
-.foto-da-oab{
+.foto-da-oab {
     padding-top: 50px;
     padding-right: 350px;
     padding-left: 250px;
@@ -669,7 +669,7 @@ body {
     color: var(--cor_secundaria);
 }
 
-.descricao{
+.descricao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -681,14 +681,14 @@ body {
     padding-bottom: 150px;
 }
 
-.descricao i{
+.descricao i {
     padding-top: 80px;
     padding-bottom: 20px;
     font-size: 80px;
     color: var(--fundo_principal);
 }
 
-.descricao p{
+.descricao p {
     padding-top: 20px;
     padding-bottom: 20px;
     color: var(--fundo_principal);
@@ -696,11 +696,11 @@ body {
     width: 40vw;
 }
 
-.descricao hr{
+.descricao hr {
     width: 40vw;
 }
 
-.descricao a{
+.descricao a {
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -712,7 +712,7 @@ body {
     width: 40vw;
 }
 
-@media (max-width:650px){
+@media (max-width:650px) {
     .oab {
         display: flex;
         flex-direction: column;
@@ -721,18 +721,18 @@ body {
         width: 100%;
         position: relative;
     }
-    
-    .foto-da-oab{
+
+    .foto-da-oab {
         padding-top: 0px;
         padding-right: 0px;
         padding-left: 0px;
     }
-    
+
     .foto-da-oab img {
         height: 50vh;
         width: 100%;
     }
-    
+
     .oab-id {
         display: flex;
         flex-direction: column;
@@ -742,14 +742,14 @@ body {
         background-color: var(--cor_principal);
         padding: 15px 15px 15px 15px;
     }
-    
+
     .oab-id h2 {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 25px;
     }
 
-    .descricao{
+    .descricao {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -760,27 +760,27 @@ body {
         padding-top: 0px;
         padding-bottom: 0px;
     }
-    
-    .descricao i{
+
+    .descricao i {
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: 80px;
         color: var(--fundo_principal);
     }
-    
-    .descricao p{
+
+    .descricao p {
         padding-top: 20px;
         padding-bottom: 20px;
         color: var(--fundo_principal);
         font-size: 25px;
         width: 80vw;
     }
-    
-    .descricao hr{
+
+    .descricao hr {
         width: 60vw;
     }
-    
-    .descricao a{
+
+    .descricao a {
         display: flex;
         justify-content: center;
         padding-top: 15px;
@@ -793,7 +793,7 @@ body {
     }
 }
 
-@media (max-width: 1024px) and (min-width:660px){
+@media (max-width: 1524px) and (min-width:660px) {
     .oab {
         display: flex;
         align-items: center;
@@ -803,18 +803,18 @@ body {
         width: 100%;
         position: relative;
     }
-    
-    .foto-da-oab{
+
+    .foto-da-oab {
         padding-top: 150px;
         padding-right: 70px;
         padding-left: 30px;
     }
-    
+
     .foto-da-oab img {
         height: 40vh;
         width: 35vw;
     }
-    
+
     .oab-id {
         display: flex;
         flex-direction: column;
@@ -824,14 +824,14 @@ body {
         background-color: var(--cor_principal);
         padding: 15px 15px 15px 15px;
     }
-    
+
     .oab-id h2 {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 20px;
     }
 
-    .descricao{
+    .descricao {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -842,27 +842,27 @@ body {
         padding-top: 20px;
         padding-bottom: 50px;
     }
-    
-    .descricao i{
+
+    .descricao i {
         padding-top: 80px;
         padding-bottom: 20px;
         font-size: 80px;
         color: var(--fundo_principal);
     }
-    
-    .descricao p{
+
+    .descricao p {
         padding-top: 20px;
         padding-bottom: 20px;
         color: var(--fundo_principal);
         font-size: 25px;
         width: 40vw;
     }
-    
-    .descricao hr{
+
+    .descricao hr {
         width: 40vw;
     }
-    
-    .descricao a{
+
+    .descricao a {
         display: flex;
         justify-content: center;
         padding-top: 15px;
@@ -873,7 +873,64 @@ body {
         background-color: var(--cor_principal);
         width: 40vw;
     }
-    
+
+}
+
+.slogan {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-image: url(./Sources/papel.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media (max-width:690px){
+    .slogan{
+        height: auto;
+        background-size: 100% 100%;
+    }
+}
+
+.slo-hud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    padding-bottom: 90px;
+}
+
+.slo-hud i {
+    font-size: 150px;
+    color: var(--cor_principal);
+}
+
+.slo-hud p{
+    color: var(--cor_secundaria);
+    padding-bottom: 20px;
+}
+
+.slo-hud h1 {
+    font-size: 80px;
+    color: var(--cor_secundaria);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.slo-hud hr {
+    width: 15vw;
+}
+
+.slo-hud a {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--cor_principal);
+    background-color: var(--cinza_azulado);
+    width: 35vw;
 }
 
 /*Animação*/
