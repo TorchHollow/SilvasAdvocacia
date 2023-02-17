@@ -885,14 +885,14 @@ body {
     background-size: 100%;
 }
 
-@media (max-width:690px){
-    .slogan{
+@media (max-width:690px) {
+    .slogan {
         height: auto;
         background-size: 100% 100%;
     }
 }
 
-.slo-hud{
+.slo-hud {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -905,7 +905,7 @@ body {
     color: var(--cor_principal);
 }
 
-.slo-hud p{
+.slo-hud p {
     color: var(--cor_secundaria);
     padding-bottom: 20px;
 }
@@ -931,6 +931,190 @@ body {
     color: var(--cor_principal);
     background-color: var(--cinza_azulado);
     width: 35vw;
+}
+
+.escritorio {
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-image: url(./Sources/ecri-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 140%;
+}
+
+.ecri-div {
+    background-color: var(--fundo_principal);
+    width: 45vw;
+    height: 60vh;
+    transform: skewX(20deg);
+}
+
+.container {
+    width: 30vw;
+    position: absolute;
+    bottom: 90px;
+    left: 200px;
+}
+
+.container h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--cor_principal);
+}
+
+.container hr {
+    color: var(--cor_principal);
+}
+
+.container a {
+    background-color: var(--cor_principal);
+    text-decoration: none;
+    color: white;
+    padding-left: 150px;
+    padding-right: 170px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.escri-img {
+    position: absolute;
+    top: 50px;
+    left: 45%;
+}
+
+.escri-img img {
+    width: 40vw;
+    height: 50vh;
+}
+
+
+@media (max-width:690px){
+    .escritorio {
+        height: auto;
+        width: 100%;
+        position: relative;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 0;
+    }
+
+    .ecri-div {
+        background-color: none;
+        width: 0;
+        height: 0;
+        transform: none;
+    }
+
+    .container {
+        width: 100%;
+        position: unset;
+        bottom: 0px;
+        left: 50px;
+    }
+
+    .container a {
+        background-color: var(--cor_principal);
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .escri-img {
+        position: unset;
+        top: 0px;
+        left: 0;
+    }
+
+    .escri-img img {
+        padding-top:11px ;
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+@media (max-width:1000px) and (min-width:700px){
+    .ecri-div {
+        background-color: var(--fundo_principal);
+        width: 55vw;
+        height: 60vh;
+        transform: skewX(20deg);
+    }
+    
+    .container {
+        width: 30vw;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }
+
+    .container a {
+        background-color: var(--cor_principal);
+        text-decoration: none;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .escri-img {
+        position: absolute;
+        top: 100px;
+        left: 45%;
+    }
+    
+    .escri-img img {
+        width: 55vw;
+        height: 35vh;
+    }
+}
+
+@media (max-width:1440px) and (min-width:1010px){
+    .ecri-div {
+        background-color: var(--fundo_principal);
+        width: 55vw;
+        height: 60vh;
+        transform: skewX(20deg);
+    }
+    
+    .container {
+        width: 30vw;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+    }
+
+    .container a {
+        background-color: var(--cor_principal);
+        text-decoration: none;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .escri-img {
+        position: absolute;
+        top: 100px;
+        left: 45%;
+    }
+    
+    .escri-img img {
+        width: 55vw;
+        height: 35vh;
+    }
+}
+
+@media (max-width:1500px) and (min-width:1440px){
+    .escri-img img {
+        width: 45vw;
+        height: 35vh;
+    }
 }
 
 /*Animação*/
