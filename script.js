@@ -15,3 +15,21 @@ function revelacao(){
 window.addEventListener("scroll", revelacao)
 
 revelacao()
+
+//Iniciado o mapa
+
+function iniciarMapa(){
+    const uluru = { lat: -23.467611318855617, lng: -46.53409768363273}
+
+    const mapa = new google.maps.Map(document.getElementById("mapa"), {
+        zoom: 15,
+        center: uluru,
+    })
+
+    const marcador = new google.maps.Marker({
+        position: uluru,
+        map: mapa,
+    })
+}
+
+window.iniciarMapa = iniciarMapa

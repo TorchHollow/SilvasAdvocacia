@@ -34,8 +34,8 @@
             <a href="./index.html">Home</a>
             <a href="#fale">Fale Conosco</a>
             <a href="#area">Áreas de Atuação</a>
-            <a href="#">Profissional</a>
-            <a href="#">Quem Somos</a>
+            <a href="#prof">Profissional</a>
+            <a href="#somos">Quem Somos</a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
             <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
@@ -139,7 +139,7 @@
             </section>
         </div>
         <br>
-        <section class="oab">
+        <section class="oab" id="prof">
             <div class="foto-da-oab">
                 <img src="./Sources/foto da oab.jpg" alt="oabpng">
                 <div class="oab-id">
@@ -167,7 +167,7 @@
             </div>
         </section>
 
-        <section class="escritorio">
+        <section class="escritorio" id="somos">
             <div class="ecri-div"></div>
             <div class="container">
                 <h1>Escritório</h1>
@@ -185,17 +185,89 @@
                     resolução no
                     menor tempo e com a máxima eficiência</p>
                 <br>
-                <a href="#">Agendar um Horário</a>
+                <a href="#fale2">Agendar um Horário</a>
             </div>
             <div class="escri-img">
                 <img src="./Sources/escritorio.jpg" alt="imgEcri">
             </div>
         </section>
+
+        <section class="localizacao">
+            <div id="mapa"></div>
+            <div class="endereco">
+                <h1>Estamos aqui</h1>
+                <hr>
+                <br>
+                <p>R. Joseph Zarzour, 93 - Sala 406 - Centro</p>
+                <p>Guarulhos - SP, 07020-093</p>
+            </div>
+        </section>
+
+        <section class="formulario2">
+            <form action="https://usebasin.com/f/7986dcc3ecb6" method="post">
+                <h1>Fale Conosco</h1>
+                <hr>
+                <br>
+                <input class="for-input2" type="text" name="Nome" placeholder="Nome">
+                <br>
+                <input class="for-input2" type="tel" name="Telefone" placeholder="Telefone/WhatsApp">
+                <br>
+                <textarea class="for-input2" name="Duvida" id="duv" cols="30" rows="10"
+                    placeholder="qual a sua dúvida"></textarea>
+                <br>
+                <button class="for-btn2" type="submit">Enviar</button>
+            </form>
+
+            <div class="informacoes">
+                <div class="info">
+                    <h4>Horário de atendimento</h4>
+                    <p>Segunda a sexta, das 08h30 às 17h</p>
+                </div>
+
+                <div class="info">
+                    <h4>WhatsApp</h4>
+                    <p>(11) 96774-5495</p>
+                </div>
+
+                <div class="info">
+                    <h4>E-mail:</h4>
+                    <p>carlos@caetanoadvogacia.com.br</p>
+                </div>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="copy" id="fale2">
+            <i class="fa-solid fa-s"></i>
+            <br>
+            <hr>
+            <br>
+            <div class="termos">
+                <a href="#">termos de uso</a>
+                <p>|</p>
+                <a href="#">política de privacidade</a>
+            </div>
+
+            <div class="right">
+                <p>copyright</p>
+                <p>|</p>
+                <p>silva advocacia e consultoria. todos os direitos reservados</p>
+            </div>
+        </footer>
     </section>
 
 
 
     <script src="./script.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlbyMXxZgxHlBvgOU06T1__xgJX0WHz9U&callback=iniciarMapa">
+        </script>
 </body>
 
 </html>
